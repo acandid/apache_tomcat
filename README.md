@@ -18,7 +18,7 @@ Role Variables
 
 Variables below are required
 
-| Variable                                     | Default                       | Comments                                                                                
+| Variable                                     | Default                       | Comments                                     |                                              |                               |                                           
 |                                              |                               |
 | :---                                         | :---                          | :---       
 |                                              |                               |
