@@ -5,4 +5,3 @@
     dest: "{{ link_path }}"
     state: link
 ...
-
