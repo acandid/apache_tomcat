@@ -1,0 +1,9 @@
+---
+- name: Tomcat Permission
+  file:
+    path: "{{ tomcat_path }}"
+    owner: tomcat
+    group: tomcat
+    recurse: yes
+  notify: restart tomcat
+...

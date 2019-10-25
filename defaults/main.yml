@@ -1,0 +1,20 @@
+---
+# defaults file for apache_tomcat
+apache_tomcat_pkg: https://www-eu.apache.org/dist/tomcat/tomcat-9/v9.0.27/bin/apache-tomcat-9.0.27.tar.gz
+#
+tomcat_path: /opt/tomcat/
+#
+# User and password for web access
+admin_gui: admin
+admin_gui_pass: passw0rd
+# Path file tomcat-users.xml
+admin_gui_path: /opt/tomcat/latest/conf/
+#
+# # Path file configure allow web access
+manager_allow_access: /opt/tomcat/latest/webapps/manager/META-INF/
+#
+host_manager_allow_access: /opt/tomcat/latest/webapps/host-manager/META-INF/
+#
+# Path for symbolic link for better version control.
+link_path: /opt/tomcat/latest
+original_path: /opt/tomcat/apache-tomcat-9.0.27

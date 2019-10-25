@@ -1,0 +1,6 @@
+---
+- name: Install Java package Redhat {{ java_pkg }}
+  yum:
+    name: "{{ java_pkg }}"
+    state: present
+...

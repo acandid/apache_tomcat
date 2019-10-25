@@ -1,0 +1,29 @@
+---
+dependencies: []
+#
+galaxy_info:
+  author: acandid
+  description: Install and Configure apache tomcat9
+  company: "Almir Candido"
+  license: "license (BSD, MIT)"
+  min_ansible_version: 2.8
+  platforms:
+    - name: EL
+      versions:
+        - 7
+    - name: Debian
+      versions:
+        - 10
+#
+  galaxy_tags:
+    - httpd
+    - web
+    - apache
+    - debian
+    - centos
+    - redhat
+    - apache-tomcat
+    - tomcat
+    - java
+#
+allow_duplicates: true

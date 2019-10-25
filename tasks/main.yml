@@ -1,0 +1,39 @@
+---
+# tasks file for apache_tomcat
+- name: Include Variables
+  include_vars: "{{ ansible_os_family }}.yml"
+#
+- name: install Java package Redhat
+  import_tasks: install_java_rhel7.yml
+  when: ansible_os_family == 'RedHat'
+#
+- name: Install Java package Debian
+  import_tasks: install_java_deb.yml
+  when: ansible_os_family == 'Debian'
+#
+- name: Create Tomcat User
+  import_tasks: create_tomcat_user.yml
+#
+- name: Download Tomcat Package
+  import_tasks: download_tomcat.yml
+#
+- name: Unarchive Tomcat Package
+  import_tasks: unarchive_tomcat.yml
+#
+- name: Create symbolic link for better version control
+  import_tasks: tomcat_control_version.yml
+#
+- name: Create and configure tomcat-users.xml /host-manager/META-INF/context.xml /manager/META-INF/context.xml tomcat.service files
+  import_tasks: configuration_files.yml
+#
+- name: Create tomcat.service file RedHat
+  import_tasks: create_tomcat_service_rhel7.yml
+  when: ansible_os_family == 'RedHat'
+#
+- name: Create tomcat.service file Debian
+  import_tasks: create_tomcat_service_deb_10.yml
+  when: ansible_os_family == 'Debian'
+#
+- name: Configure permissions
+  import_tasks: tomcat_permission.yml
+...

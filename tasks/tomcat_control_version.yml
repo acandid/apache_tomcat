@@ -1,0 +1,8 @@
+---
+- name: Create symbolic link for better version control.
+  file:
+    src: "{{ original_path }}"
+    dest: "{{ link_path }}"
+    state: link
+...
+

@@ -1,0 +1,7 @@
+---
+- name: Download Tomcat package
+  get_url:
+    url: "{{ apache_tomcat_pkg }}"
+    dest: /tmp
+  register: tomcat
+...

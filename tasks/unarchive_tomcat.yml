@@ -1,0 +1,7 @@
+---
+- name: Unarchive tomcat package
+  unarchive:
+    src: "{{ tomcat.dest }}"
+    dest: "{{ tomcat_path }}"
+    remote_src: yes
+...
