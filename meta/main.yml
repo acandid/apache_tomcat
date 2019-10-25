@@ -3,7 +3,7 @@ dependencies: []
 #
 galaxy_info:
   author: acandid
-  description: Install and Configure apache tomcat9
+  description: Install and Configure apache tomcat9 Redhat/CentOS 7 and Debian 10
   company: "Almir Candido"
   license: "license (BSD, MIT)"
   min_ansible_version: 2.8
@@ -13,7 +13,7 @@ galaxy_info:
         - 7
     - name: Debian
       versions:
-        - 10
+        - buster
 #
   galaxy_tags:
     - httpd
@@ -22,7 +22,6 @@ galaxy_info:
     - debian
     - centos
     - redhat
-    - apache-tomcat
     - tomcat
     - java
 #
