@@ -24,7 +24,7 @@ Variables below are required
 |                                              |                               |
 | `admin_gui`                                  |                               | Inform administrator name for web manager
 |                                              |                               |
-| `admin_gui_pass`                             |                               | Inform administrator password for web manager
+| `admin_gui_pass`                             |                               | Inform administrator pass for web manager
 |                                              |                               |
 
 
