@@ -18,8 +18,7 @@ Role Variables
 
 Variables below are required
 
-| Variable                                     | Default                       | Comments                                     |                                              |                               |                                           
-|                                              |                               |
+| Variable                                     | Default                       | Comments                                     
 | :---                                         | :---                          | :---       
 |                                              |                               |
 | `admin_gui`                                  |                               | Inform administrator name for web manager
